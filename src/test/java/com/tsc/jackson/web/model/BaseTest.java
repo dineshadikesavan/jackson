@@ -1,6 +1,7 @@
 package com.tsc.jackson.web.model;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
@@ -15,6 +16,7 @@ public class BaseTest {
                 .lastModifiedDate(OffsetDateTime.now())
                 .price(new BigDecimal("9.99"))
                 .upc(1321564654654L)
+                .myLocalDate(LocalDate.now())
                 .build();
     }
 }
